@@ -1,4 +1,4 @@
-# How to Debug a Docker Container 
+# 🐞 How to Debug a Docker Container 
 
 This is an example project for demonstrating Docker container debugging techniques. The project contains a simple static web page that lists the steps for debugging Docker containers, as outlined in the accompanying script.
 
