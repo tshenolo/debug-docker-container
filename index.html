@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Debug a Docker Container</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .step {
+            margin-bottom: 30px;
+        }
+        code {
+            display: block;
+            background: #f4f4f4;
+            padding: 10px;
+            border-left: 3px solid #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>How to Debug a Docker Container</h1>
+
+    <div class="step">
+        <h2>Step 1: Check Container Logs</h2>
+        <p>First, check the container logs using the <code>docker logs</code> command.</p>
+        <code>docker logs [container_name_or_id]</code>
+    </div>
+
+    <div class="step">
+        <h2>Step 2: Access the Container Shell</h2>
+        <p>Access the container's shell using <code>docker exec</code> to run commands inside the container.</p>
+        <code>docker exec -it [container_name_or_id] /bin/bash</code>
+    </div>
+
+    <div class="step">
+        <h2>Step 3: Check Running Processes</h2>
+        <p>Inside the container, check running processes with <code>ps aux</code>.</p>
+        <code>ps aux</code>
+    </div>
+
+    <div class="step">
+        <h2>Step 4: Inspect Configuration Files</h2>
+        <p>Inspect configuration files for errors or misconfigurations.</p>
+        <code>cat /path/to/config/file</code>
+    </div>
+
+    <div class="step">
+        <h2>Step 5: Network Troubleshooting</h2>
+        <p>Check network settings and connectivity issues using <code>ping</code> or <code>curl</code>.</p>
+        <code>ping google.com</code>
+        <code>curl http://localhost:80</code>
+    </div>
+
+    <div class="step">
+        <h2>Debug Containers Like a Pro!</h2>
+        <p>Use these steps to debug your Docker containers and keep your applications running smoothly!</p>
+    </div>
+</div>
+
+</body>
+</html>
