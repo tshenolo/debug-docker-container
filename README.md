@@ -20,7 +20,7 @@ docker build -t debug-docker-container .
 
 To run the container:
 ```
-docker run -d -p 8080:80 debug-docker-container
+docker run -d -p 8080:80 --name mycontainer debug-docker-container
 ```
 
 Once the container is running, you can access the website in your browser at:
@@ -31,7 +31,7 @@ http://localhost:8080
 ## Stopping the Container
 To stop the running container, you can use the following command:
 ```
-docker stop [container_id]
+docker stop mycontainer
 ```
 
 ## Contribute
